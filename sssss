@@ -12,13 +12,14 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
         console.log('Test Case 1 Passed: Google homepage opened successfully.');
 
         // Test Case 2: Verify Search Box Accepts Input
-        await searchBox.sendKeys('Prudhvi');
+        await searchBox.sendKeys('Shariq');
         console.log('Test Case 2 Passed: Search box accepts input.');
 
         // Test Case 3: Verify Search Results Are Displayed
         await searchBox.sendKeys(Key.RETURN);
         await driver.wait(until.titleContains('Prudhvi'), 5000);
         console.log('Test Case 3 Passed: Search results are displayed.');
+
     } catch (err) {
         console.error('Test failed:', err);
     } finally {
@@ -28,7 +29,9 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
 
 
 
+
 //functional
+
 
 const {Builder,By,Key}=require('selenium-webdriver')
 async function example() {
